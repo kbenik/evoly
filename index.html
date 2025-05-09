@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evoly</title>
     <link rel="stylesheet" href="style.css">
+    <!-- TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <!-- MobileNet model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@latest/dist/mobilenet.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -38,7 +42,7 @@
         <div id="collection-form-view" class="view" style="display: none;">
             <h2 id="collection-form-title">Create Collection</h2>
             <form id="collection-form">
-                <input type="hidden" id="collection-id"> 
+                <input type="hidden" id="collection-id">
                 <label for="collection-name">Collection Name:</label>
                 <input type="text" id="collection-name" required><br>
 
@@ -112,8 +116,8 @@
             <div class="entry-detail-nav">
                 <button id="back-to-timeline-btn" class="button secondary">Back to Timeline</button>
                 <div>
-                    <button id="prev-entry-btn" class="button">&lt; Prev</button>
-                    <button id="next-entry-btn" class="button">Next &gt;</button>
+                    <button id="prev-entry-btn" class="button">< Prev</button>
+                    <button id="next-entry-btn" class="button">Next ></button>
                 </div>
             </div>
             <img id="entry-detail-image" src="#" alt="Full entry image">
